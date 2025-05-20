@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>clock</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./CSS/clock.css">
+  <link rel="stylesheet" href="./CSS/digit.css">
+  <link rel="stylesheet" href="./CSS/date-circle.css">
+  <link rel="stylesheet" href="./CSS/day-clock.css">
+  <link rel="stylesheet" href="./CSS/small-circles.css">
+  <link rel="stylesheet" href="./CSS/second-section.css">
+
+  <style>
+    body {
+      background: #dfdcd7;
+      user-select: none;
+    }
+
+    #container {
+      width: 1030px;
+      height: 660px;
+      margin: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0.3rem 0.3rem 0.6rem #d4d4d4,
+        -0.2rem -0.2rem 0.5rem #faf5f5,
+        inset 0.2rem 0.2rem 0.5rem #d4d4d4,
+        inset -0.2rem -0.2rem 0.5rem #faf5f5;
+      border-radius: 25px;
+      padding-left: 60px;
+      padding-right: 60px;
+      padding-top: 30px;
+      /* background: linear-gradient(to bottom right, #f7f7f7 40%, #dfdcd7, #d4d4d4); */
+      background-color: #dfdcd7;
+    }
+
+    #first-section {
+      width: 510px;
+      float: left;
+      height: 660px;
+
+
+      #left {
+        float: left;
+        height: 510px;
+      }
+
+      #right {
+        float: right;
+        height: 510px;
+      }
+
+    }
+
+    #second-section {
+      width: 460px;
+      float: right;
+      height: 660px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="first-section">
+      <div id="left">
+        <div id="clock-square">
+          <div id="clock-face">
+            <div id="center"></div>
+            <div id="hour"></div>
+            <div id="minute"></div>
+            <div id="second"></div>
+          </div>
+        </div>
+
+        <br>
+
+        <div id="digit-square">
+          <div class="digit-block">
+            <div class="block-front"></div>
+            <div class="block-back"></div>
+          </div>
+          <div class="digit-block">
+            <div class="block-back"></div>
+            <div class="block-front"></div>
+          </div>
+        </div>
+      </div>
+      <div id="right">
+        <div id="date-circle">
+          <div id="progress-ring">
+          </div>
+          <div id="circle-center">
+            <div id="circle-date">26</div>
+            <div id="circle-month">MAR</div>
+          </div>
+          <div id="triangle-wrapper">
+            <div id="triangle"></div>
+          </div>
+        </div>
+
+        <br>
+
+        <div id="day-circle">
+          <div id="circle-face"></div>
+        </div>
+      </div>
+      <div id="circle-set">
+        <div class="small-circles">
+          <img src="./images/clear-sky.png">
+        </div>
+        <div class="small-circles">
+          <div class="temp">25°C</div>
+        </div>
+        <div class="small-circles">
+          <div class="temp" style="color: black;">30°C</div>
+          <div class="temp-info">MAX</div>
+        </div>
+        <div class="small-circles">
+          <div class="temp" style="color: black;">21°C</div>
+          <div class="temp-info">MIN</div>
+        </div>
+      </div>
+    </div>
+    <div id="second-section">
+      <div id="year">BI<span id="big">R</span>DS</div>
+      <div id="music-square">
+        <div id="song-info">
+          <div id="title"></div>
+          <div id="singer"></div>
+          <div id="album"></div>
+          <div id="all-titles"></div>
+          <p id="progress-square"></p>
+          <div id="time-total-m">00</div>
+          <div id="time-total-colon">:</div>
+          <div id="time-total-s">00</div>
+          <div id="current-time-m">00</div>
+          <div id="current-time-colon">:</div>
+          <div id="current-time-s">00</div>
+        </div>
+      </div>
+      <div id="btn-square">
+        <div class="btn">
+          <div class="btn-circle"><img id="back-icon" src="./images/back.png"></div>
+        </div>
+        <div class="btn">
+          <div class="btn-circle"><img id="play-icon" src="./images/play.png"></div>
+        </div>
+        <div class="btn">
+          <div class="btn-circle"><img id="next-icon" src="./images/next.png"></div>
+        </div>
+        <div class="btn">
+          <div class="btn-circle"><img id="note-icon" src="./images/musical-note.png"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./JS/clock.js"></script>
+  <script src="./JS/date-circle.js"></script>
+  <script src="./JS/day-clock.js"></script>
+  <script src="./JS/second-section.js"></script>
+  <script>
+    // const faveSongs = document.getElementById('fave-songs')
+
+
+  </script>
+
+</body>
+
+</html>
