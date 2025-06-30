@@ -1,3 +1,5 @@
+[Click here](<https://jlo-1992.github.io/-TimeTune-Station/>) to access the clock.
+
 # 泰山職訓前端班時鐘作業
 發揮創意美化你上課完成的時鐘，並試著加入更多功能  
 
